@@ -1,10 +1,11 @@
-import Button from "./components/button";
+// import Button from "./components/button";
+import Button from "./components/buttonStyled";
 
 function App() {
   return (
     <div>
       <h1>Init</h1>
-      <Button>Click Me!</Button>
+      <Button id="kev">Click Me!</Button>
     </div>
   );
 }
