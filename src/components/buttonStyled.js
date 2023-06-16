@@ -1,6 +1,8 @@
 import styled from "@emotion/styled";
 import { typography, colors } from "../global";
 
+import PropTypes from "prop-types";
+
 const typeStyles = {
   primary: `
       background-color: ${colors.pink[600]};
@@ -86,5 +88,10 @@ function Button({ children, type = "default", ...otherprops }) {
     </StyledButton>
   );
 }
+
+Button.propTypes = {
+  type: PropTypes.oneOf(["primary", "secondary", "default"]),
+  size: PropTypes.oneOf(["sm", "md", "lg"]),
+};
 
 export default Button;
