@@ -1,4 +1,5 @@
 import { colors } from "../global/colors";
+// import { theme } from "../global/theme";
 
 function Button({ children }) {
   return (
