@@ -79,7 +79,7 @@ const StyledButton = styled.button`
   ${(props) => typeStyles[props.type]}
 `;
 
-function Button({ children, type = "primary", ...otherprops }) {
+function Button({ children, type = "default", ...otherprops }) {
   return (
     <StyledButton type={type} {...otherprops}>
       {children}
